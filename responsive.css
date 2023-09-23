@@ -1,0 +1,27 @@
+@media(max-width:500px){
+    #card{
+        width: 90%;
+        padding: 40px 9px;
+    }
+    #search input {
+        margin: 0 8px;
+        padding: 0 19px;
+        
+    }
+    #weather-icon {
+        width: 160px;
+        margin-top: 7px;
+    }
+    #weather h1 {
+        font-size: 63px;
+    }
+    #weather h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: -4px;
+    }
+    #details {
+        padding: 0px 15px;
+        margin-top: 34px;
+    }
+}

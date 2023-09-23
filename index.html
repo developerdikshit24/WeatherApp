@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Repoter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <div id="card">
+        <div id="search" class="flex">
+            <input type="text" name="search" placeholder="Enter Your City" spellcheck="false">
+            <button><img src="./images/search.png" alt="Search"></button>
+        </div>
+        <div id="error">
+            <p>Invaild City Name**</p>
+        </div>
+        <div id="weather">
+            <img src="./images/rain.png" id="weather-icon">
+            <h1 id="temp">21°C</h1>
+            <h2 id="city">New Delhi</h2>
+            <div id="details" class="flex">
+                <div class="col flex">
+                    <img src="images/humidity.png" id="img" alt="">
+                    <div>
+                        <p id="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col flex">
+                    <img src="images/wind.png" id="img" alt="">
+                    <div>
+                        <p id="wind">15 km/h</p>
+                        <p>Wind-Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
