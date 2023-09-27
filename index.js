@@ -10,7 +10,12 @@ async function cheackWheather( city){
     if(response.status == 404){
         document.querySelector("#error").style.display = "block"
         document.querySelector("#weather").style.display = "none"
-    }else{
+    }else if(response.status == 400){
+        document.querySelector("#error").style.display = "block"
+        document.querySelector("#error").innerHTML = "Enter The City Name First**"
+        document.querySelector("#weather").style.display = "none"
+    }
+    else{
         
         document.querySelector("#city").innerHTML = data.name ;
         document.querySelector("#temp").innerHTML = Math.round(data.main.temp)+"°C" ;
@@ -40,7 +45,7 @@ async function cheackWheather( city){
 
 searchBtn.addEventListener("click",()=>{
     cheackWheather(searchBox.value);
-
+    searchBox.value = ""
 })
 
 
